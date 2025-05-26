@@ -1,16 +1,80 @@
-# eye_disease_app
+# 🧿 Eye Disease Prediction System
 
-A new Flutter project.
+A Deep Learning–Based Intelligent Ocular Disease Prediction System built with Flutter (UI), Flask (API backend), and EfficientNetB3 (AI model). It can classify fundus images into 8 eye disease categories.
 
-## Getting Started
+## 🩺 Supported Diseases
 
-This project is a starting point for a Flutter application.
+- N: Normal
+- D: Diabetes
+- G: Glaucoma
+- C: Cataract
+- A: Age-related Macular Degeneration
+- H: Hypertension
+- M: Pathological Myopia
+- O: Other diseases/abnormalities
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Upload **Left Eye** and **Right Eye** images.
+- Real-time prediction using trained EfficientNetB3 model.
+- Displays result on the mobile device.
+- Sends prediction result as PDF to registered email.
+- Responsive Flutter UI for both web and mobile.
+- Flask backend with multi-class model support.
+
+---
+
+## 📁 Project Structure
+
+eye_disease_app/
+├── backend/
+│ ├── app.py # Flask backend
+│ ├── model/ # Trained EfficientNetB3 model files
+│ ├── utils/ # Helper functions
+│ └── requirements.txt
+├── frontend/
+│ ├── lib/ # Flutter app code
+│ └── pubspec.yaml
+├── README.md
+└── LICENSE
+
+---
+
+## 🧠 Model Details
+
+- **Model Architecture**: EfficientNetB3
+- **Framework**: TensorFlow + Keras
+- **Dataset**: ODIR (Ocular Disease Intelligent Recognition) dataset
+- **Accuracy Achieved**: ~96.19%
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score
+
+---
+
+## ⚙️ How to Run
+
+### 🔧 Backend (Flask)
+
+```bash
+cd backend
+pip install -r requirements.txt
+flask --app app run
+
+📱 Frontend (Flutter)
+
+cd frontend
+flutter pub get
+flutter run
+
+📦 Dependencies
+
+Flutter SDK
+
+Flask
+
+TensorFlow / Keras
+
+OpenCV
+
+NumPy / PIL / sklearn
