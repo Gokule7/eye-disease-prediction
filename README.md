@@ -194,17 +194,11 @@ Contributions are welcome! Please:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
-
-- ODIR-5K dataset creators
-- TensorFlow and Keras teams
-- Original Grad-CAM paper authors: Selvaraju et al., 2017
-
 ## 📞 Contact
 
 For questions or collaboration:
 - GitHub Issues: [Project Issues](https://github.com/yourusername/eye-disease-gradcam/issues)
-- Email: your.email@example.com
+- Email: gokule710@gmail.com
 
 ## ⚠️ Disclaimer
 
